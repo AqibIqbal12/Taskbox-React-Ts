@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #B6CCFE;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navBar {
+  background-color: #abc4ff;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+.btn {
+  background-color: white;
+  outline: none;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #C1D3FE;
+  color: white;
+}
+
+.txtbox {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #555;
+  outline: none;
+}
+.txtbox:focus{
+  background-color: #C1D3FE;
+}
+
+.section {
+  flex-grow: 1;
+  background-color: #B6CCFE;
+  padding: 0;
+}
+
+.msg_wrapper {
+  text-align: center;
+}
+
+.title-message {
+  font-size: 3em;
+}
+
+.subtitle-message {
+  font-size: 2em;
+}
+
+.list {
+  background-color: #c1d3fe;
+  margin: 20px 0px;
+}
+
+.list_items {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 1px solid #abc4ff;
+}
+.list_items:first-child{
+  border-top: 1px solid #abc4ff;
+}
+
+.inp_lab {
+  width: 50%;
+}
+
+.inp_lab>input {
+  width: 25px;
+  height: 25px;
+  cursor: pointer
+}
+
+.inp_lab>label {
+  color: black;
+  /* font-weight: bold; */
+  margin: 0px 10px;
+  font-size: 25px;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #abc4ff;
+}
+
+.footer>p {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 50px;
+}
+@media screen and (max-width: 800px) {
+  .navBar {
+    padding: 0px 30px;
+  }
+  
+}
+@media screen and (max-width: 630px) {
+  .navBar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  
+}
+@media screen and (max-width: 470px) {
+  .inp_lab {
+    width: 100%;
+  }
+}
